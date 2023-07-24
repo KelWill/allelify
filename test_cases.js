@@ -2,9 +2,9 @@ const allelify = require("./index");
 const path = require("path");
 
 allelify([
-    { command: "sleep 1", title: "test" },
+    { command: "make lint", title: "test" },
     { command: "sleep 2", title: "lint" },
-    { command: "sleep 1", title: "do another thing" },
+    { command: "sleep 1", title: "test types" },
     {
         title: "snarglify",
         command: "ag",
