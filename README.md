@@ -1,6 +1,6 @@
 # allelify
 
-![picture of multiple commands run in parallel](https://github.com/kelwill/allelify/blob/master/example.png?raw=true)
+![picture of multiple commands run in parallel](https://raw.githubusercontent.com/KelWill/allellify/master/example.png)
 
 ```js
 require("allelify")([
