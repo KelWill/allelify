@@ -1,0 +1,21 @@
+{
+  "name": "allelify",
+  "version": "1.0.0",
+  "description": "Parallelize commands and write logs to reasonable files in background.",
+  "main": "index.js",
+  "files": [
+    "index.js"
+  ],
+  "keywords": [
+    "parallel",
+    "exec",
+    "parallelize",
+    "build"
+  ],
+  "author": "Will Keleher",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^2.4.1",
+    "spinnies": "^0.5.1"
+  }
+}
