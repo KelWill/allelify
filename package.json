@@ -4,7 +4,8 @@
   "description": "Parallelize commands and write logs to reasonable files in background.",
   "main": "index.js",
   "files": [
-    "index.js"
+    "index.js",
+    "bin.js"
   ],
   "keywords": [
     "parallel",
@@ -14,6 +15,9 @@
   ],
   "author": "Will Keleher",
   "license": "ISC",
+  "bin": {
+    "allelify": "./bin.js"
+  },
   "dependencies": {
     "chalk": "^2.4.1",
     "spinnies": "^0.5.1"

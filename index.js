@@ -42,7 +42,10 @@ require("allelify")([
         command: "ag",
         args: ["-l", "build steps"], // args is necessary when arguments have spaces
     },
-], { tmpDirectory: path.join(__dirname, "../tmp") });`;
+], { tmpDirectory: path.join(__dirname, "../tmp") });
+
+If you've installed this globally using \`npm install -g allelify\`, you can run things in parallel on the command line:  \`allelify 'sleep 1' 'sleep 2'\`
+`;
 
 // there's probably a better way of doing this—just want a reasonable date string for a file name
 function getDateTimestampForFilename(d = new Date()) {

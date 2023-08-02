@@ -4,17 +4,22 @@
 
 ```js
 require("allelify")([
-    "make test",
-    {
-        title: "lint",
-        command: "make lint",
-    },
-    {
-        title: "snarglify",
-        command: "ag",
-        args: ["-l", "build steps"],
-    },
+  "make test",
+  {
+    title: "lint",
+    command: "make lint",
+  },
+  {
+    title: "snarglify",
+    command: "ag",
+    args: ["-l", "build steps"],
+  },
 ]);
+```
+
+```sh
+npm install -g allelify
+allelify 'make lint' 'sleep 1' 'make test'
 ```
 
 For build steps, I often want a simple way to run commands in parallel while preserving clear logs that aren't muddled together from multiple processes. `allelify` does just that.
