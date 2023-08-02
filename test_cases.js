@@ -1,14 +1,19 @@
 const allelify = require("./index");
 const path = require("path");
 
-allelify([
+allelify(
+  [
     { command: "make lint", title: "test" },
     { command: "sleep 2", title: "lint" },
     { command: "sleep 1", title: "test types" },
     {
-        title: "snarglify",
-        command: "ag",
-        args: ["-l", "build steps"],
+      title: "snarglify",
+      command: "ag",
+      args: ["-l", "build steps"],
     },
     "sleep 1",
-], { tmpDirectory: path.join(__dirname, "./tmp") });
+  ],
+  { tmpDirectory: path.join(__dirname, "./tmp") }
+).then(() => {
+  return allelify(["make lint", "sleep 1"]);
+});
