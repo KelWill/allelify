@@ -1,6 +1,6 @@
 {
   "name": "allelify",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Parallelize commands and write logs to reasonable files in background.",
   "main": "index.js",
   "files": [
